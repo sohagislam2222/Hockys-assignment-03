@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,88 +10,210 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              clifford: '#da373d',
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
             }
-          }
         }
-      }
     </script>
     <!-- Font Awesome link -->
-  <script src="https://kit.fontawesome.com/355d7f7ac4.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/355d7f7ac4.js" crossorigin="anonymous"></script>
 
     <!-- GOOGLE FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
-  <style>
-    .font-manrope{font-family: 'Manrope', sans-serif;}
-</style>
+    <style>
+        .font-manrope {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
 
 
 </head>
+
 <body class="font-manrope">
-    <header class=" container mx-auto lg: px-10">
+    <header class=" container mx-auto px-5 lg:px-10">
         <nav>
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
-                  <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li>
+                                <a>About</a>
+                            </li>
+
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+
+
+                            <li><a>Contact</a></li>
+                        </ul>
                     </div>
-                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                      <li><a>Home</a></li>
-                      <li>
-                        <a>About</a></li>
-                        
-                          <li><a>Pages</a></li>
-                          <li><a>Blog</a></li>
-                       
-                      
-                      <li><a>Contact</a></li>
-                    </ul>
-                  </div>
-                  <a class="">
-                   
-                <h3 class="text-4xl font-extrabold text-[#131318]">Hockey <span class="text-[#FF4240]">’</span>s</h3>
-                
+                    <a class="">
+
+                        <h3 class=" text-2xl  lg:text-4xl font-extrabold text-[#131318]">Hockey <span
+                                class="text-[#FF4240]">’</span>s</h3>
+
                     </a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1">
-                    <li><a class="text-[#FF4240] font-bold">Home </a></li>
-                    <li><a class="text-[#424247]">About</a></li>
-                   
-                    <li><a class="text-[#424247]">Pages</a></li>
-                    <li><a class="text-[#424247]">Blog </a></li>
-                    <li><a class="text-[#424247]">Contact</a></li>
-                  </ul>
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a class="text-[#FF4240] font-bold">Home </a></li>
+                        <li><a class="text-[#424247]">About</a></li>
+
+                        <li><a class="text-[#424247]">Pages</a></li>
+                        <li><a class="text-[#424247]">Blog </a></li>
+                        <li><a class="text-[#424247]">Contact</a></li>
+                    </ul>
                 </div>
                 <div class="navbar-end">
                     <i class="fa-solid fa-magnifying-glass mr-6"></i>
-                  <a class="btn bg-[#FF4240] text-white ">Get Ticket</a>
+                    <a class="btn bg-[#FF4240] text-white ">Get Ticket</a>
                 </div>
-              </div>
+            </div>
         </nav>
+
+
 
         <!-- Banner Part -->
 
-        <div>
-
-
-
-
+        <div class="relative  mt-16 ">
+            <div class="carousel  lg:w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="Images/1.png" class="w-full lg:h-[550px]" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="Images/2.png" class="lg:w-full lg:h-[550px]" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="Images/3.png" class="lg:w-full lg:h-[550px]" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                    <img src="Images/4.png" class="lg:w-full lg:h-[550px]" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+            <div class="sm:px-6 lg:absolute lg:right-[-350px] lg:bottom-14">
+                <div class="bg-[#131318] p-4 lg:p-7 space-y-2 rounded-2xl lg:w-1/2   ">
+                    <h3 class="text-2xl text-left font-extrabold text-[#FFF] ">
+                        Meet all the heroes from the field
+                    </h3>
+                    <p class="font-medium text-left text-[#FFFFFF99]">
+                        Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna
+                        in sit nullam proin.
+                    </p>
+                </div>
+            </div>
         </div>
-
-
-
     </header>
+
+
+    <!-- Main Section Start -->
+
     <main>
 
+                <!-- First section/ Redial progress section -->
+
+
+        <section class="container mx-auto px-5 lg:px-10">
+            <div>
+
+                <div class="text-center px-14 mt-32">
+                    <h1 class="text-4xl font-extrabold text-[#131318]">
+                        Professional Hockeys Club
+                    </h1>
+                    <p class="font-medium text-[#13131899]">
+                        Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna
+                        in sit nullam proin.
+                    </p>
+                </div>
+
+
+                    <!-- Progress-01 -->
+
+                <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+
+                    <div class="flex flex-col sm:px-5 mt-12 justify-center items-center text-center">
+                        <div class="radial-progress text-[#FF4240]" style="--value:70;" role="progressbar">70%</div>
+                        <h4 class="text-xl mt-6 font-semibold text-[#131318]">
+                            Prayer Facility
+                        </h4>
+                        <p class="mt-4">
+                            Amet consectetur. Condimentum dignissim adipiscing .
+                        </p>
+                    </div>
+
+                     <!-- Progress-02 -->
+
+                    <div class="flex flex-col mt-12 justify-center items-center text-center">
+
+                        <div class="radial-progress text-[#49D293]" style="--value:80;" role="progressbar">96%</div>
+
+                        <h4 class="text-xl mt-6 font-semibold text-[#131318]">
+                            Experienced Coach
+                        </h4>
+                        <p class="mt-4">
+                            Amet consectetur. Condimentum dignissim adipiscing .
+                        </p>
+                    </div>
+
+                     <!-- Progress-03 -->
+
+                    <div class="flex flex-col mt-12 justify-center items-center text-center">
+                        <div class="radial-progress text-[#FFB546]" style="--value:80;" role="progressbar">90%</div>
+                        <h4 class="text-xl mt-6 font-semibold text-[#131318]">
+                            Senior Player
+                        </h4>
+                        <p class="mt-4">
+                            Amet consectetur. Condimentum dignissim adipiscing .
+                        </p>
+                    </div>
+
+                     <!-- Progress-04 -->
+
+                    <div class="flex flex-col mt-12 justify-center items-center text-center">
+                        <div class="radial-progress text-[#4C8DF1]" style="--value:70;" role="progressbar">80%</div>
+                        <h4 class="text-xl mt-6 font-semibold text-[#131318]">
+                            Training Ground
+                        </h4>
+                        <p class="mt-4">
+                            Amet consectetur. Condimentum dignissim adipiscing .
+                        </p>
+                    </div>
+
+                </div>
+        </section>
 
     </main>
 
@@ -98,6 +221,7 @@
 
 
     </footer>
-    
+
 </body>
+
 </html>
